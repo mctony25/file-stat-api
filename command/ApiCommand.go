@@ -35,7 +35,7 @@ func initRoutes(router *mux.Router) {
 	router.NotFoundHandler = handler.NotFoundHandler()
 	router.MethodNotAllowedHandler = handler.MethodNotAllowedHandler()
 
-	router.HandleFunc("/home", (controller.HomeController{}).GetInfo).Methods("GET")
+	router.HandleFunc("/", (controller.HomeController{}).GetInfo).Methods("GET")
 	router.HandleFunc("/files", (controller.FileController{}).GetFileList).Methods("GET")
 }
 
