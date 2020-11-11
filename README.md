@@ -36,6 +36,10 @@ To list files via the CLI, the argument to give is `list`. The option `directory
 from. When not provided, the default directory to list information is `/tmp`. So a concrete example to list a folder will look like this
 
     file_stat list --directory /home/appuser
+    
+Note for the container version, either you "login" in the running container or you can also run something like that
+
+    docker exec -it <container-id> file_stat list --directory /home/appuser 
 
 
 #### Run the REST API
