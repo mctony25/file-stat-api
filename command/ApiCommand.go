@@ -25,7 +25,7 @@ var (
 
 func (cc ApiCommand) GetCommand() *cobra.Command {
 
-	apiCmd.PersistentFlags().IntVar(&port, "port", 5150, "Port on which the API should listen (default is 5150)")
+	apiCmd.PersistentFlags().IntVar(&port, "port", 5150, "Port on which the API is listening")
 
 	return apiCmd
 }

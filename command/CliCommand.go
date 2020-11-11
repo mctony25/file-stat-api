@@ -22,7 +22,7 @@ var (
 
 func (cc CliCommand) GetCommand() *cobra.Command {
 
-	cliCmd.PersistentFlags().StringVar(&directoryName, "directory", "/tmp", "config file (default is '/tmp')")
+	cliCmd.PersistentFlags().StringVar(&directoryName, "directory", "/tmp", "The directory path that you want files information from")
 
 	return cliCmd
 }
